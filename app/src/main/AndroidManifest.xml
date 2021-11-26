@@ -39,6 +39,7 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyAUFEz8EhzrkORug4qlNKjQE7eQ-ap53z0" />
+        <service android:name=".ServiceCal"/>
     </application>
 
 </manifest>
