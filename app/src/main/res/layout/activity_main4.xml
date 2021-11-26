@@ -50,11 +50,11 @@
 
     <ImageView
         android:id="@+id/imageView13"
-        android:layout_width="106dp"
-        android:layout_height="36dp"
+        android:layout_width="95dp"
+        android:layout_height="35dp"
         android:layout_marginTop="304dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintHorizontal_bias="0.022"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/tiger" />
@@ -106,9 +106,9 @@
         android:id="@+id/imageView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="48dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView17"
         app:layout_constraintTop_toBottomOf="@+id/imageView17"
         app:srcCompat="@drawable/motnam" />

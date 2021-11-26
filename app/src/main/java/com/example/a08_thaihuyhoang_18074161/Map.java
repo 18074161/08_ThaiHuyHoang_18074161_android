@@ -36,6 +36,6 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback {
         mMap.addMarker(new MarkerOptions()
                 .position(iuh)
                 .title("Hoàng Kính"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(iuh, 15f));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(iuh));
     }
 }
