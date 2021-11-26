@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private GoogleSignInClient mGoogleSignInClient;
     SignInButton signInButton;
     CheckBox mCheckBox;
-    ImageButton btnLo;
+    ImageButton btnLo;//a
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
