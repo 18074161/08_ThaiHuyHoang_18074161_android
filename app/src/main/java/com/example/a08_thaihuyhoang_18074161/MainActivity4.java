@@ -16,6 +16,7 @@ public class MainActivity4 extends AppCompatActivity {
     ImageButton btnTien;
     TextView tvMoney;
     ImageView imghoi;
+    TextView tvName;
 
     private ServiceCal mServiceCal;
     private Boolean isConnect = false;
@@ -35,16 +36,27 @@ public class MainActivity4 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setContentView(R.layout.activity_main4);
         Intent intent =  new Intent(MainActivity4.this, ServiceCal.class);
         bindService(intent, mConnection,BIND_AUTO_CREATE);
 
-        setContentView(R.layout.activity_main4);
+
         btnTien = findViewById(R.id.btnTien);
+        tvName = findViewById(R.id.tvName);
         tvMoney = findViewById(R.id.tvMoney);
         imghoi = findViewById(R.id.imghoi);
         imghoi.setVisibility(View.VISIBLE);
         tvMoney.setVisibility(View.GONE);
+
+
+        if(getIntent().getStringExtra("ban") != null){
+            String a = getIntent().getStringExtra("ban");
+            tvName.setText(a);
+        }
+        if(getIntent().getStringExtra("ban1") != null){
+            String a = getIntent().getStringExtra("ban1");
+            tvName.setText(a);
+        }
         btnTien.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

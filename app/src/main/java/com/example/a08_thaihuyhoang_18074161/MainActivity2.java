@@ -9,6 +9,7 @@ import android.widget.ImageView;
 
 public class MainActivity2 extends AppCompatActivity {
     ImageView btn1,btn2,btn3,btn4,btn5,btn6;
+    String name = "Bàn 1";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,37 +23,49 @@ public class MainActivity2 extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity2.this, MainActivity4.class));
+                Intent intent = new Intent(MainActivity2.this, MainActivity4.class);
+                intent.putExtra("ban","Bàn 01");
+                startActivity(intent);
             }
         });
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity2.this, MainActivity4.class));
+                Intent intent = new Intent(MainActivity2.this, MainActivity4.class);
+                intent.putExtra("ban","Bàn 02");
+                startActivity(intent);
             }
         });
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity2.this, MainActivity4.class));
+                Intent intent = new Intent(MainActivity2.this, MainActivity4.class);
+                intent.putExtra("ban","Bàn 03");
+                startActivity(intent);
             }
         });
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity2.this, MainActivity4.class));
+                Intent intent = new Intent(MainActivity2.this, MainActivity4.class);
+                intent.putExtra("ban","Bàn 04");
+                startActivity(intent);
             }
         });
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity2.this, MainActivity4.class));
+                Intent intent = new Intent(MainActivity2.this, MainActivity4.class);
+                intent.putExtra("ban","Bàn 05");
+                startActivity(intent);
             }
         });
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity2.this, MainActivity4.class));
+                Intent intent = new Intent(MainActivity2.this, MainActivity4.class);
+                intent.putExtra("ban","Bàn 06");
+                startActivity(intent);
             }
         });
     }

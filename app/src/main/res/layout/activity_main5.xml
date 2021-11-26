@@ -8,7 +8,7 @@
     tools:context=".MainActivity5">
 
     <TextView
-        android:id="@+id/textView00"
+        android:id="@+id/tvBann"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
@@ -85,7 +85,7 @@
         android:id="@+id/imageView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="@+id/imageView21"
         app:layout_constraintTop_toBottomOf="@+id/imageView21"
         app:srcCompat="@drawable/boxao" />
@@ -98,7 +98,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageView19"
         app:layout_constraintStart_toEndOf="@+id/imageView19"
         app:layout_constraintTop_toTopOf="@+id/imageView19"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/haitr" />
 
     <ImageView
@@ -126,27 +126,17 @@
         android:id="@+id/imageView26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintStart_toStartOf="@+id/imageView25"
         app:layout_constraintTop_toBottomOf="@+id/imageView25"
         app:srcCompat="@drawable/motnam" />
 
     <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="105dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="184dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/add" />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="105dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="248dp"
+        android:id="@+id/imageButton4"
+        android:layout_width="92dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="376dp"
+        android:background="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -155,20 +145,34 @@
 
     <ImageButton
         android:id="@+id/imageButton3"
-        android:layout_width="91dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="304dp"
+        android:layout_width="92dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="308dp"
+        android:background="@null"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.959"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/add" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="105dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="368dp"
+        android:id="@+id/imageButton"
+        android:layout_width="92dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="244dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.996"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/add" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="92dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="180dp"
+        android:background="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -197,14 +201,27 @@
         app:srcCompat="@drawable/more" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/btnBill"
+        android:layout_width="204dp"
+        android:layout_height="52dp"
         android:layout_marginBottom="44dp"
+        android:background="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/tinhtien" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xem BILL"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBill"
+        app:layout_constraintEnd_toEndOf="@+id/btnBill"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="@+id/btnBill"
+        app:layout_constraintTop_toTopOf="@+id/btnBill" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
