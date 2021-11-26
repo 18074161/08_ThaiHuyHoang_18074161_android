@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private int RC_SIGN_IN = 0;
     private GoogleSignInClient mGoogleSignInClient;
     SignInButton signInButton;
+    CheckBox mCheckBox;
     ImageButton btnLo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         signInButton = findViewById(R.id.sign_in_button);
         btnLo = findViewById(R.id.btnLo);
+        mCheckBox = findViewById(R.id.checkBox);
+
         btnLo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,7 +68,12 @@ public class MainActivity extends AppCompatActivity {
     private void handleSignInResult(Task<GoogleSignInAccount> completedTask) {
         try {
             GoogleSignInAccount account = completedTask.getResult(ApiException.class);
-            startActivity(new Intent(MainActivity.this, MainActivity2.class));
+            if(mCheckBox.isChecked()){
+                startActivity(new Intent(MainActivity.this, MainActivity2.class));
+            }else{
+                startActivity(new Intent(MainActivity.this, MainActivity3.class));
+            }
+
             // Signed in successfully, show authenticated UI.
         } catch (ApiException e) {
             // The ApiException status code indicates the detailed failure reason.
